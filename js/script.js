@@ -101,4 +101,8 @@ const timer = document.querySelector(selector),
 
 setClock ('.timer', deadline)
 
+// modal  
+
+
+
 });
