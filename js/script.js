@@ -101,7 +101,7 @@ const timer = document.querySelector(selector),
 
 setClock ('.timer', deadline)
 
-// modal  
+//************** */ modal  
 
 const modalTrigger = document.querySelectorAll('[data-modal]'),
       modal = document.querySelector('.modal'),
@@ -141,7 +141,7 @@ document.addEventListener('keydown', (e)=>{
    }
 });
 
-const modalTimerId = setTimeout(openModal, 5000);
+// const modalTimerId = setTimeout(openModal, 5000);
 
 function showModalByScroll () {
    if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1){
@@ -151,5 +151,16 @@ function showModalByScroll () {
    
 }
 window.addEventListener('scroll', showModalByScroll);
+
+// Используем КЛАССИ для карточек!!*************************
+
+class MenuCard {
+   constructor(src, alt, title, descr, price) {
+         this.src = src;
+         this.alt = alt;
+         this.descr =descr;
+         this.price = price;
+   }
+}
 
 });
