@@ -171,7 +171,7 @@ class MenuCard {
       this.price = +this.price * this.transfer;
    }
 
-   render () {
+   render () { 
       const element = document.createElement('div');
       if(this.clases.length === 0){
          this.element = 'menu__item';
@@ -228,5 +228,17 @@ new MenuCard(
    "menu__item"
 
 ).render();
+
+// Forms - отправка даных с формы на сервер
+
+const forms = document.querySelectorAll('form');
+function postData(form) {
+   form.addEventListener('submit', (e) =>{
+      e.preventDefault();
+
+      const request = new XMLHttpRequest();
+      request.open('POST', 'server.php');
+   });
+}
 
 });
